@@ -21,7 +21,6 @@ with open("openapi_key.txt", "r") as f:
 GPT3rror.raise_error(openai_api_key=openai_api_key, openai_model="text-davinci-002")
 ```
 
-Now all your cells will send their errors to GPT3.
+That's it! Now all cells in the notebook will send their errors to GPT3.
 
-See the notebook for a quick demo.
 
