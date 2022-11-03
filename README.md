@@ -1,7 +1,7 @@
 # GPT3rror
 Have GPT3 interpret your errors in jupyter notebook. 
 
-See the [demo notebook](https://github.com/damek/GPT3rror/blob/master/GPT3rror_test.ipynb)
+See the [demo notebook.](https://github.com/damek/GPT3rror/blob/master/GPT3rror_test.ipynb)
 
 # Requirements
 
