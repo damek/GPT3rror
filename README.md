@@ -12,7 +12,6 @@ Add the following code to any cell of your jupyter notebook and run that cell.
 '''
 import GPT3rror
 
-# load the openai api key from openapi_key.txt
 with open("openapi_key.txt", "r") as f:
     openai_api_key = f.read()
 
