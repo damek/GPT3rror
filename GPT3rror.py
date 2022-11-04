@@ -14,7 +14,7 @@ def custom_exc(shell, etype, evalue, tb, tb_offset=None,
                openai_model="text-curie-001",
                max_tokens=256,
                pass_cell_to_GPT3=False,
-               temperature=termperture):
+               temperature=.7):
     openai.api_key = openai_api_key
 
     # still show the error within the notebook, don't just swallow it
@@ -28,7 +28,7 @@ def custom_exc(shell, etype, evalue, tb, tb_offset=None,
 
     params = {"model": openai_model,
               "prompt": "",
-              "temperature": termperture, "max_tokens": max_tokens, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0}
+              "temperature": temperature, "max_tokens": max_tokens, "top_p": 1, "frequency_penalty": 0, "presence_penalty": 0}
     prompt = "I received the following error after trying to compile my python code." \
              + sstb + \
              "\n===\n Explain the error and how to fix it. " + \
